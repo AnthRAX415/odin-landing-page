@@ -90,11 +90,15 @@ button {
     flex-direction: column;
     align-items: center;
     padding: 32px 64px;
+    flex: 1;
 }
 
 .second-section-content {
     display: flex;
-    gap: 16px;
+    flex-direction: row;
+    flex-grow: 1;
+    justify-content: space-between;
+    gap: 32px;
 
 }
 
@@ -105,5 +109,32 @@ h2 {
 }
 
 .image-para img, .image-para p {
-    max-width: 15vw;
+    max-width: 100%;
+}
+
+.image-para {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.third-section {
+    background-color: #e5e7eb;
+    padding: 32px 64px;
+    display: flex;
+    flex-direction: column;
+
+}
+
+.quote {
+    font-size: 36px;
+    font-style: italic;
+    color: #1f2937;
+    margin: 0px;
+}
+
+#thor {
+    margin: 0px;
+    align-self: flex-end;
+    font-weight: bold;
 }
